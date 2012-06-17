@@ -1,0 +1,121 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Pantone
+$background-general: #f4f4f4;
+$background-div: #0c0c0c;
+$background-altern: #ffffff;
+$font: #3f3f3f;
+
+@mixin shadow($color: #000000) {
+  -webkit-box-shadow: 0 8px 6px -6px $color;
+  -moz-box-shadow: 0 8px 6px -6px $color;
+  box-shadow: 0 8px 6px -6px $color;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: $background-general;
+  font-family: sans;
+  color: $font;
+}
+
+.header{
+  .banner{
+    height: 180px;
+    background-image: url("banner.png");
+    .title{
+      img{
+        height: 30%;
+        margin: 60px 0 0 100px;
+        position: relative;
+      }
+    }  
+    .bird{
+      img{
+        height: 180px;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: -20px;
+      }
+    }
+    .buttons{
+      float: right;
+      margin-top: 23px;
+    }
+  }
+}
+
+.division{
+  height: 7px;
+  background: $background-div;
+  @include shadow(#000000);
+}
+
+.content{
+  margin: 30px;
+}
+
+.team{
+  text-align: center;
+  img{
+    margin: 40px;
+    opacity: 0.9;
+    filter:alpha(opacity=90); /* For IE8 and earlier */
+    /* Firefox */
+      -moz-transition: all 0.4s ease-in;
+    /* WebKit */
+      -webkit-transition: all 0.4s ease-in;
+    /* Opera */
+      -o-transition: all 0.4s ease-in;
+    /* Standard */
+       transition: all 0.4s ease-in;
+  }
+  img:hover{
+    opacity: 1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    /* Firefox */
+      -moz-transition: all 0.4s ease-in;
+    /* WebKit */
+      -webkit-transition: all 0.4s ease-in;
+    /* Opera */
+      -o-transition: all 0.4s ease-in;
+    /* Standard */
+       transition: all 0.4s ease-in;
+  }
+}
+
+.statement{
+  text-align: center;
+  margin: 20px 40px 40px 40px;
+}
+
+.resources{
+  background: $background-altern;
+  height: 270px;
+}
+
+#box {
+  margin: 20px;
+  img{
+    margin: 20px;
+    width: 195px;
+    height: 70px;
+  }
+  float: left;
+  width: 250px;
+  height: 250px;
+  padding: 20px 0 0 30px;
+  //display: inline;
+}
+
+.footer{
+  background-image: url("banner.png");
+  height: 40px;
+}
