@@ -98,7 +98,9 @@ body{
 
 .resources{
   background: $background-altern;
-  height: 270px;
+  margin: 0 auto 0 auto;
+  height: 300px;
+  width: 960px;
 }
 
 #box {
@@ -115,7 +117,19 @@ body{
   //display: inline;
 }
 
+.push{
+  padding:40px;
+}
+
 .footer{
-  background-image: url("banner.png");
-  height: 40px;
+  background-image: url("banner-black.png");
+  height: 10px;
+  width: 100%;
+  padding: 15px;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+  color: white;
 }
