@@ -1,0 +1,75 @@
+//All SCSS & CSS Styles developed by
+//A. Felipe Cabargas Madrid <felipe@cabargas.com>
+//Mockingbird Dev - 2012
+
+//Pantone
+$background-general: #f4f4f4;
+$background-div: #0c0c0c;
+$background-altern: #ffffff;
+$font: #3f3f3f;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: $background-general;
+  font-family: sans;
+  color: $font;
+}
+
+.header{
+  .banner{
+    height: 180px;
+    background-image: url("banner.png");
+    .title{
+      img{
+        height: 30%;
+        margin: 60px 0 0 100px;
+        position: relative;
+      }
+    }  
+    .bird{
+      img{
+        height: 180px;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: -20px;
+      }
+    }
+    .buttons{
+      float: right;
+      margin-top: 23px;
+    }
+  }
+}
+
+// .division{
+//   height: 7px;
+//   background: $background-div;
+//   @include shadow(#000000);
+// }
+
+.content{
+  margin: 30px;
+}
+
+
+.push{
+  padding:40px;
+}
+
+.footer{
+  background-image: url("banner-black.png");
+  height: 10px;
+  width: 100%;
+  padding: 15px;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
