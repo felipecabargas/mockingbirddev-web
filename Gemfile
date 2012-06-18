@@ -5,7 +5,8 @@ gem 'rails', '3.2.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'pg'
 gem 'therubyracer'
 
 # Gems used only for assets and not required
@@ -32,6 +33,9 @@ gem 'jquery-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
+
+# Deploy with Heroku
+gem 'heroku'
 
 # Deploy with Capistrano
 # gem 'capistrano'
