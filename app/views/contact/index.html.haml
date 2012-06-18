@@ -1,8 +1,0 @@
-= render "/layouts/header"
-.content
-  = simple_form_for :contact do |f|
-    = f.input :name
-    = f.input :mail
-    = f.input_field :message, as: :text, required: false
-    = f.submit "Send"
-= render "/layouts/footer"

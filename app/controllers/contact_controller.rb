@@ -1,15 +1,17 @@
 class ContactController < ApplicationController
-  expose(:contact)
-
-  def index
+  def new
+    @message = Message.new
   end
 
   def create
-    @contact = contact.new
-    if @contact.save
-      redirect_to contact_index_path
+    @message = Message.new(params[:message])
+    
+    if @message.valid?
+      NotificationsMailer.new_message(@message).deliver
+      redirect_to(root_path, :notice => "Message was successfully sent.")
     else
-      render index
+      flash.now.alert = "Please fill all fields."
+      render :new
     end
   end
 end

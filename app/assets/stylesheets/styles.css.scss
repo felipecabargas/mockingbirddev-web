@@ -7,5 +7,17 @@
 .navbar-inner{
   margin-top: -50px;
   float: right;
-  border-radius: 0px;
+  border-radius: 20px 0 0 20px;
+}
+
+.form-actions{
+  text-align: center;
+}
+
+label{
+  text-align: left;
+}
+
+input, textarea, button{
+  width: 50%;
 }

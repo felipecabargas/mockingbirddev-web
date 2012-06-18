@@ -9,12 +9,12 @@
       .container-fluid
         %ul.nav
           %li
-            %a{:href =>"#"}Inicio
+            =link_to(('Inicio'), home_index_path)
           %li
-            %a{:href =>"#"}Equipo
+            =link_to(('Equipo'), about_index_path)
           %li
-            %a{:href =>"#"}Servicios
+            =link_to(('Servicios'), home_index_path)
           %li
-            %a{:href =>"#"}Clientes
+            =link_to(('Clientes'), home_index_path)
           %li
-            %a{:href =>"#"}Contacto
+            =link_to(('Contacto'), "contact")

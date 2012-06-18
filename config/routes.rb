@@ -5,11 +5,8 @@ Mockingbird::Application.routes.draw do
 
   get "home/index"
 
-  get "contact/index"
-
-  resources :contact, only: [:index, :create] do
-    match '/contact/index' => 'contact#index', :via => :post
-  end
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
