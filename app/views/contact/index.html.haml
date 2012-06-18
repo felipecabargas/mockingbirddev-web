@@ -1,5 +1,8 @@
-= simple_form_for @contact do |f|
-  = f.input :name, :prompt => "Name:"
-  = f.input :mail
-  = f.input :message
-  = f.button :submit
+= render "/layouts/header"
+.content
+  = simple_form_for :contacts do |f|
+    = f.input :name
+    = f.input :mail
+    = f.input :message
+    = f.button :submit
+= render "/layouts/footer"
