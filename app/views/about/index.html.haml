@@ -1,38 +1,47 @@
 = render "/layouts/header"
 .content
+  %h2 Estos somos!
   .founders
-    %h2 Estos somos!
-    %hr
     .founder
-      /= image_tag("felipe.png")
-      %h3 Felipe Cabargas | Co-Founder
-      %p Estudiante de Bachillerato en Ciencias Naturales y Exactas de la Universidad de Chile
-      %p UI/UX Designer | Developer en Rails, Python y HTML5
-      %h5 
-        Twitter: 
-        = link_to("@juanpintoduran", :url => "#")
-        | Web: 
-        = link_to("http://www.cabargas.com", :url => "#")
-    %hr
+      %hr
+      .team
+        = image_tag("felipe.png")
+      .bio
+        %h4 Felipe Cabargas | Co-Founder
+        %hr
+        %p Estudiante de Bachillerato en Ciencias Naturales y Exactas de la Universidad de Chile
+        %p UI/UX Designer | Developer en Rails, Python y HTML5
+        %h5 
+          Twitter: 
+          = link_to("@juanpintoduran", :url => "#")
+          | Web: 
+          = link_to("http://www.cabargas.com", :url => "#")
     .founder
-      /= image_tag("nelson.png")
-      %h3 Nélson Jimenez | Co-Founder
-      %p Estudiante de Ingeniería Civil en Computación de la   Universidad Tecnológica de Chile
-      %p  Backend ninja | Developer en Rails, PHP, C#
-      %h5 
-        Twitter: 
-        = link_to("@_patojimenez", :url => "#")
-        | Web: 
-        = link_to("http://www.monoentrenado.com", :url => "#")
-    %hr
+      %hr
+      .team
+        = image_tag("nelson.png")
+      .bio
+        %h4 Nélson Jimenez | Co-Founder
+        %hr
+        %p Estudiante de Ingeniería Civil en Computación de la   Universidad Tecnológica de Chile
+        %p  Backend ninja | Developer en Rails, PHP, C#
+        %h5 
+          Twitter: 
+          = link_to("@_patojimenez", :url => "#")
+          | Web: 
+          = link_to("http://www.monoentrenado.com", :url => "#")
     .founder
-      /= image_tag("henry.png")
-      %h3 Henry López | Co-Founder
-      %p Estudiante de Enseñanza Media en el Instituto Nacional General José Miguel Carrera
-      %p Developer en PHP+MySQL
-      %h5 
-        Twitter: 
-        = link_to("@Marcianisto", :url => "#")
-        | Web: 
-        = link_to("http://www.notengopagina.com", :url => "#")
+      %hr
+      .team
+        = image_tag("henry.png")
+      .bio
+        %h4 Henry López | Co-Founder
+        %hr
+        %p Estudiante de Enseñanza Media en el Instituto Nacional General José Miguel Carrera
+        %p Developer en PHP+MySQL
+        %h5 
+          Twitter: 
+          = link_to("@Marcianisto", :url => "#")
+          | Web: 
+          = link_to("http://www.notengopagina.com", :url => "#")
 = render "/layouts/footer"
