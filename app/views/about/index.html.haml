@@ -1,6 +1,7 @@
 = render "/layouts/header"
 .content
-  %h2 Estos somos!
+  .statement
+    %h2 Estos somos!
   .founders
     .founder
       %hr
@@ -13,9 +14,9 @@
         %p UI/UX Designer | Developer en Rails, Python y HTML5
         %h5 
           Twitter: 
-          = link_to("@juanpintoduran", :url => "#")
+          = link_to("@juanpintoduran", "https://www.twitter.com/juanpintoduran")
           | Web: 
-          = link_to("http://www.cabargas.com", :url => "#")
+          = link_to("http://www.cabargas.com", "http://www.cabargas.com")
     .founder
       %hr
       .team
@@ -27,9 +28,9 @@
         %p  Backend ninja | Developer en Rails, PHP, C#
         %h5 
           Twitter: 
-          = link_to("@_patojimenez", :url => "#")
+          = link_to("@_patojimenez", "https://www.twitter.com/_patojimenez")
           | Web: 
-          = link_to("http://www.monoentrenado.com", :url => "#")
+          = link_to("http://www.monoentrenado.com", "http://www.monoentrenado.com")
     .founder
       %hr
       .team
@@ -41,7 +42,7 @@
         %p Developer en PHP+MySQL
         %h5 
           Twitter: 
-          = link_to("@Marcianisto", :url => "#")
+          = link_to("@Marcianisto", "https://www.twitter.com/Marcianisto")
           | Web: 
           = link_to("http://www.notengopagina.com", :url => "#")
 = render "/layouts/footer"

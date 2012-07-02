@@ -1,0 +1,17 @@
+= render "/layouts/header"
+.content
+  .resources      
+    #box
+      %div
+        %p Desarrollamos proyectos con las últimas tecnologías en un ambiente comprometido con las necesidades del cliente.
+        %p Nuestro equipo tiene experiencia en la creación de código para proyectos de cualquier tamaño.
+      %h5
+        =image_tag("technologies.png")
+    #box
+      %div
+        %p Chapado a la antigua? ... Contactanos por email a:
+        %p
+          =link_to("contacto@mockingbirddev.com", "mailto:contacto@mockingbirddev.com")
+      %h5
+        =image_tag("snetworks.png")
+= render "/layouts/footer"

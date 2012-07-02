@@ -4,43 +4,37 @@
 
 //Pantone
 $background-general: #f4f4f4;
+$background-light: #84B3FF;
 $background-div: #0c0c0c;
 $background-altern: #ffffff;
 $font: #3f3f3f;
 
-.statement{
+.big_image{
   text-align: center;
-  margin: 20px 40px 40px 40px;
+}
+
+.statement{
+  width: 100%;
+  text-align: center;
 }
 
 .resources{
-  background: $background-altern;
-  margin: 0 auto 0 auto;
-  height: 300px;
-  width: 960px;
+  margin: 0 auto 0 auto;  
 }
 
 #box {
-  margin: 20px;
-  img{
-    margin: 20px;
-    width: 195px;
-    height: 70px;
-  }
   float: left;
-  width: 250px;
-  height: 250px;
-  //padding: 20px 0 0 30px;
-  //display: inline;
-}
-
-#full {
-  text-align: center;
   img{
+    margin-bottom: 10px;
     width: 195px;
     height: 70px;
   }
-  width: 850px;
-  height: 250px;
+  h5{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  width: 50%;
   //display: inline;
 }

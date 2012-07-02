@@ -46,14 +46,15 @@ body{
   }
 }
 
-// .division{
-//   height: 7px;
-//   background: $background-div;
-//   @include shadow(#000000);
-// }
+.division{
+  height: 7px;
+  background: $background-div;
+  // @include shadow(#000000);
+}
 
 .content{
-  margin: 30px;
+  margin: 0 auto 0 auto;
+  width: 100%;
 }
 
 

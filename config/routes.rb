@@ -1,5 +1,6 @@
 Mockingbird::Application.routes.draw do
   get "about/index"
+  get "services/index"
 
   get "assets/images"
 
