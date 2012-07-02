@@ -1,3 +1,24 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.resources{
+  margin: 0 auto 0 auto;  
+}
+
+#box {
+  float: left;
+  img{
+    margin-bottom: 10px;
+    width: 195px;
+    height: 70px;
+  }
+  h5{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  width: 50%;
+  //display: inline;
+}
