@@ -1,14 +1,13 @@
 = render "/layouts/header"
 .content
-  .statement
-    %h2 Estos somos!
-  .founders
-    .founder
-      %hr
-      .team
-        = image_tag("felipe.png")
-      .bio
-        %h4 Felipe Cabargas | Co-Founder
+  .container-fluid
+    .page-header
+      %h1 
+        Estos somos!
+        %small Nuestro equipo esta formado por jóvenes desarrolladores que aman lo que hacen.
+    .row-fluid
+      .span12.hero-unit
+        %h1 Felipe Cabargas
         %hr
         %p Estudiante de Bachillerato en Ciencias Naturales y Exactas de la Universidad de Chile
         %p UI/UX Designer | Developer en Rails, Python y HTML5
@@ -17,26 +16,24 @@
           = link_to("@juanpintoduran", "https://www.twitter.com/juanpintoduran")
           | Web: 
           = link_to("http://www.cabargas.com", "http://www.cabargas.com")
-    .founder
-      %hr
-      .team
-        = image_tag("nelson.png")
-      .bio
-        %h4 Nélson Jimenez | Co-Founder
+        .team
+          = image_tag("felipe.png")
+    .row-fluid
+      .span12.hero-unit
+        %h1 Nélson Jimenez
         %hr
-        %p Estudiante de Ingeniería Civil en Computación de la   Universidad Tecnológica de Chile
+        %p Estudiante de Ingeniería Civil en Computación de la Universidad Tecnológica de Chile
         %p  Backend ninja | Developer en Rails, PHP, C#
         %h5 
           Twitter: 
           = link_to("@_patojimenez", "https://www.twitter.com/_patojimenez")
           | Web: 
           = link_to("http://www.monoentrenado.com", "http://www.monoentrenado.com")
-    .founder
-      %hr
-      .team
-        = image_tag("henry.png")
-      .bio
-        %h4 Henry López | Co-Founder
+        .team
+          = image_tag("nelson.png")
+    .row-fluid
+      .span12.hero-unit
+        %h1 Henry López
         %hr
         %p Estudiante de Enseñanza Media en el Instituto Nacional General José Miguel Carrera
         %p Developer en PHP+MySQL
@@ -45,4 +42,6 @@
           = link_to("@Marcianisto", "https://www.twitter.com/Marcianisto")
           | Web: 
           = link_to("http://www.notengopagina.com", :url => "#")
+        .team
+          = image_tag("henry.png")
 = render "/layouts/footer"
