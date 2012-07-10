@@ -6,6 +6,8 @@ Mockingbird::Application.routes.draw do
 
   get "home/index"
 
+  # match 'about/index' => 'about'
+  # match 'services/index' => 'services'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
   # The priority is based upon order of creation:
