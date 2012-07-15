@@ -9,11 +9,13 @@ $background-div: #0c0c0c;
 $background-altern: #ffffff;
 $font: #3f3f3f;
 
-.big_image{
-  text-align: center;
+.big_image img{
+  float: left;
+  width: 50%;
+  height: 100%;
 }
 
 .statement{
-  width: 100%;
+  float: left;
   text-align: center;
 }
