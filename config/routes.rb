@@ -1,4 +1,6 @@
 Mockingbird::Application.routes.draw do
+  get "portfolio/index"
+
   get "about/index"
   get "services/index"
 

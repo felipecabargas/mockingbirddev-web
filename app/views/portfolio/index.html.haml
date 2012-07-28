@@ -1,0 +1,17 @@
+= render "/layouts/header"
+.content
+  .container-fluid
+    .page-header
+      %h1 
+        ¡Ellos ya trabajan con nosotros!
+        %small Que esperas?
+    .row-fluid
+      .span4.hero-unit.brand
+        %h5
+          = image_tag("squape.png")
+        %h5 Una nueva forma de entender el arriendo de temporada.
+        %hr
+        %h6 
+          Ver proyecto: 
+          = link_to("squape.com", "https://www.squape.com")
+= render "/layouts/footer"
