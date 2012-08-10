@@ -6,7 +6,7 @@
         ¡Estos somos nosotros!
         %small Nuestro equipo esta formado por jóvenes desarrolladores que aman lo que hacen.
     .row-fluid
-      .span12.hero-unit
+      .span8.hero-unit
         %h1 Felipe Cabargas
         %hr
         %p Estudiante de Bachillerato en Ciencias Naturales y Exactas de la Universidad de Chile
@@ -17,9 +17,11 @@
           | Web: 
           = link_to("http://www.cabargas.com", "http://www.cabargas.com")
         .team
-          = image_tag("felipe.png")
+          / = image_tag("felipe.png")
+      .span4
     .row-fluid
-      .span12.hero-unit
+      .span4
+      .span8.hero-unit
         %h1 Nélson Jimenez
         %hr
         %p Estudiante de Ingeniería Civil en Computación de la Universidad Tecnológica de Chile
@@ -30,9 +32,9 @@
           | Web: 
           = link_to("http://www.monoentrenado.com", "http://www.monoentrenado.com")
         .team
-          = image_tag("nelson.png")
+          / = image_tag("nelson.png")
     .row-fluid
-      .span12.hero-unit
+      .span8.hero-unit
         %h1 Henry López
         %hr
         %p Estudiante de Enseñanza Media en el Instituto Nacional General José Miguel Carrera
@@ -43,5 +45,6 @@
           | Web: 
           = link_to("http://www.notengopagina.com", :url => "#")
         .team
-          = image_tag("henry.png")
+          / = image_tag("henry.png")
+      .span4
 = render "/layouts/footer"
