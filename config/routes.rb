@@ -10,8 +10,8 @@ Mockingbird::Application.routes.draw do
 
   # match 'about/index' => 'about'
   # match 'services/index' => 'services'
-  match 'contact' => 'contact#new', :as => 'contact', :via => :get
-  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'contact' => 'contact#index', :as => 'contact'
+  match 'dispatch_email' => 'contact#dispatch_email', :as => 'dispatch_email', :method => :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

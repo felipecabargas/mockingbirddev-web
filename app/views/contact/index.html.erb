@@ -1,0 +1,13 @@
+<%= render "/layouts/header" %>
+
+<%= form_tag dispatch_email_path, method: :post do %>
+  <%= label_tag "user_info[name]", "Nombre" %>
+  <%= text_field_tag "user_info[name]" %>
+  <%= label_tag "user_info[email]", "Email" %>
+  <%= text_field_tag "user_info[email]" %>
+  <%= label_tag "user_info[message]", "Message" %>
+  <%= text_area_tag "user_info[message]", "" %>
+  <%= submit_tag "Enviar", :class => "{btn btn-primary btn-large}" %>
+<% end %>
+
+<%= render "/layouts/footer" %>

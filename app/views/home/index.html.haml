@@ -1,6 +1,34 @@
 = render "/layouts/header"
 .content
-  .big_image
-    =image_tag("welove.png")
-    =image_tag("resources-big.png")
+  .container-fluid
+    %hr
+    .page-header
+      %h1 
+        Qué hacemos?
+        %small Desarrollo multiplataforma rápido y ajustado al cliente
+    .row-fluid
+      .span4.hero-unit
+        %h2.info
+          =image_tag("technologies.png")
+      .span4.hero-unit
+        %h2.info
+          =image_tag("platforms.png")
+      .span4.hero-unit
+        %h2.info
+          =image_tag("snetworks.png")
+    %hr
+    .page-header
+      %h1 
+        Nuestros Clientes
+        %small Revisa nuestros trabajos recientes
+    .row-fluid
+      .span4.brand
+        %h6
+          = image_tag("squape.png")
+      .span4.brand
+        %h6
+          = image_tag("menare.png")
+      .span4.brand
+        %h6
+          = image_tag("colapso.png")
 = render "/layouts/footer"
