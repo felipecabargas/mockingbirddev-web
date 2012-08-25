@@ -1,34 +1,46 @@
 = render "/layouts/header"
 .content
   .container-fluid
-    %hr
     .page-header
       %h1 
-        Qué hacemos?
+        Qué hacemos? 
         %small Desarrollo multiplataforma rápido y ajustado al cliente
     .row-fluid
-      .span4.hero-unit
-        %h2.info
-          =image_tag("technologies.png")
-      .span4.hero-unit
-        %h2.info
-          =image_tag("platforms.png")
-      .span4.hero-unit
-        %h2.info
-          =image_tag("snetworks.png")
+      .thumbnails
+        .span4.thumbnail
+          .caption
+            %h1.info
+              =image_tag("technologies.png")
+            %hr
+            %p Modernización y mantenimiento de webs, implementación de SAaS en Ruby on Rails.
+        .span4.thumbnail
+          .caption
+            %h1.info
+              =image_tag("platforms.png")
+            %hr
+            %p Desarrollo y publicación de aplicaciones y webs nativas para iOS, Android y Windows Phone.
+        .span4.thumbnail
+          .caption
+            %h1.info
+              =image_tag("snetworks.png")
+            %hr
+            %p Porque hoy no sólo basta con una web... Diseño y planificación de campañas en las redes sociales.
     %hr
     .page-header
       %h1 
         Nuestros Clientes
         %small Revisa nuestros trabajos recientes
     .row-fluid
-      .span4.brand
-        %h6
-          = image_tag("squape.png")
-      .span4.brand
-        %h6
-          = image_tag("menare.png")
-      .span4.brand
+      .span3.brand
         %h6
           = image_tag("colapso.png")
+      .span3.brand
+        %h6
+          = image_tag("squape.png")
+      .span3.brand
+        %h6
+          = image_tag("menare.png")
+      .span3.brand
+        %h6
+          = image_tag("cabargas.png")
 = render "/layouts/footer"

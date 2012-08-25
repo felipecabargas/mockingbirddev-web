@@ -59,18 +59,20 @@ body{
 
 
 .push{
-  padding:40px;
+  padding:50px;
 }
 
 .footer{
   background-image: url("banner-black.png");
-  height: 10px;
+  padding: 10px 0 10px 0;
+  height: 40px;
   width: 100%;
-  padding: 15px;
   position: fixed; 
   bottom: 0; 
   left: 0;
-  text-align: center;
-  font-size: 14px;
   color: white;
+  text-align: right;
+  img{
+    height: 100%;
+  }
 }

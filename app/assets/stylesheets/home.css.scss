@@ -8,6 +8,7 @@ $background-light: #84B3FF;
 $background-div: #0c0c0c;
 $background-altern: #ffffff;
 $font: #3f3f3f;
+$kickass-blue: #4d76b8;
 
 .big_image img{
   float: left;
@@ -20,6 +21,10 @@ $font: #3f3f3f;
   text-align: center;
 }
 
-.hero-unit{
-  border: 3px solid $background-altern;
+.page-header h1{
+  color: $kickass-blue;
+}
+
+.caption p{
+  text-align: center;
 }

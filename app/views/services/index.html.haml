@@ -6,31 +6,35 @@
         Nuestros servicios
         %small Agile development & responsive design are our commandments.
     .row-fluid
-      .span4.hero-unit
-        %h1.info
-          =image_tag("technologies.png")
-        %hr
-        %p Desarrollamos proyectos con las últimas tecnologías en un ambiente comprometido con las necesidades del cliente.
-        %p.info 
-          =link_to("Pronto más...")
-      .span4.hero-unit
-        %h1.info
-          =image_tag("platforms.png")
-        %hr
-        %p Conocemos las necesidades del mundo de hoy y sabemos que la web móvil es importante.
-        %p.info
-          ¿Tu web en dispositivos móviles? Don't Worry! We can make it.
-      .span4.hero-unit
-        %h1.info
-          / =image_tag("snetworks.png")
-          %a{href: "https://www.facebook.com/pages/Mockingbird-Dev/398379150199100"}
-            =image_tag("facebook-but.png")
-          %a{href: "https://www.twitter.com/MockingbirdDev"}
-            =image_tag("twitter-but.png")
-          %a{href: "https://plus.google.com/b/116381271887702655354/116381271887702655354/posts"}
-            =image_tag("gplus-but.png")
-        %hr
-        %p No eres un gran fan de las redes sociales?... Utiliza a nuestro formulario de contacto (arriba) o envía un mail a:
-        %p.info
-          =link_to("contacto@mockingbirdev.com", "mailto:contacto@mockingbirdev.com")
+      .thumbnails
+        .span4.thumbnail
+          .caption
+            %h1.info
+              =image_tag("technologies.png")
+            %hr
+            %p Desarrollamos proyectos con las últimas tecnologías en un ambiente comprometido con las necesidades del cliente.
+            %p.info 
+              =link_to("Pronto más...")
+        .span4.thumbnail
+          .caption
+            %h1.info
+              =image_tag("platforms.png")
+            %hr
+            %p Conocemos las necesidades del mundo de hoy y sabemos que la web móvil es importante.
+            %p.info
+              ¿Tu web en dispositivos móviles? Don't Worry! We can make it.
+        .span4.thumbnail
+          .caption
+            %h1.info
+              / =image_tag("snetworks.png")
+              %a{href: "https://www.facebook.com/pages/Mockingbird-Dev/398379150199100"}
+                =image_tag("facebook-but.png")
+              %a{href: "https://www.twitter.com/MockingbirdDev"}
+                =image_tag("twitter-but.png")
+              %a{href: "https://plus.google.com/b/116381271887702655354/116381271887702655354/posts"}
+                =image_tag("gplus-but.png")
+            %hr
+            %p No eres un gran fan de las redes sociales?... Utiliza a nuestro formulario de contacto (arriba) o envía un mail a:
+            %p.info
+              =link_to("contacto@mockingbirdev.com", "mailto:contacto@mockingbirdev.com")
 = render "/layouts/footer"
