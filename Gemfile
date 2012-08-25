@@ -35,7 +35,7 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Heroku
-gem 'heroku',   '~> 2.30.0'
+gem 'heroku'
 
 # Deploy with Capistrano
 # gem 'capistrano'

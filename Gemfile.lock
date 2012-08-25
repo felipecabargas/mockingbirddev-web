@@ -139,7 +139,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails
   haml
-  heroku (~> 2.30.0)
+  heroku
   jquery-rails
   pg
   rails (= 3.2.5)
