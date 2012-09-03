@@ -30,6 +30,9 @@ body{
     text-align: center;
     height: 620px;
     background-image: url("banner.png");
+    a, a:visited, a:hover{
+      text-decoration: none;
+    }
     .title{
       img{
         height: 80px;

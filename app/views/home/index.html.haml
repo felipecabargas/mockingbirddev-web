@@ -1,9 +1,11 @@
 = render "/layouts/header"
 .content
-  .container-fluid
+  .container-fluid#clientes
     .page-header
       %h1 
         cada día más clientes felices
+      %h1
+        %small ellos ya trabajan con nosotros! que esperas tú?
     .row-fluid
       .span3.brand
         %h5
@@ -32,6 +34,8 @@
     .page-header
       %h1 
         vamos al grano
+      %h1
+        %small 'agile development' & responsive design are our commandments
     .row-fluid
       .span4
         %h1.info
@@ -48,4 +52,52 @@
           =image_tag("snetworks.png")
         %hr
         %p.info Porque hoy no sólo basta con una web. Diseño, asesorías y planificación de campañas en redes sociales.
+    .page-header
+      %h1 
+        esta es nuestra 'liga de la justicia'
+      %h1
+        %small nuestro equipo esta formado por jóvenes desarrolladores que aman lo que hacen
+    .row-fluid
+      .span4.info
+        %h1 Felipe Cabargas
+        %h4 
+          = link_to("felipe@mockingbirdev.com", "mailto:felipe@mockingbirdev.com")
+        %hr
+        %p Estudiante de Bachillerato en Ciencias Naturales y Exactas de la Universidad de Chile
+        %p UI/UX Designer | Developer en Rails, Python y HTML5
+        %h5 
+          Twitter: 
+          = link_to("@juanpintoduran", "https://www.twitter.com/juanpintoduran")
+          | Web: 
+          = link_to("http://www.cabargas.com", "http://www.cabargas.com")
+        .team
+          / = image_tag("felipe.png")
+      .span4.info
+        %h1 Nélson Jimenez
+        %h4 
+          = link_to("nelson@mockingbirdev.com", "mailto:nelson@mockingbirdev.com")
+        %hr
+        %p Estudiante de Ingeniería Civil en Computación de la Universidad Tecnológica de Chile
+        %p  Backend ninja | Developer en Rails, PHP, C#
+        %h5 
+          Twitter: 
+          = link_to("@_patojimenez", "https://www.twitter.com/_patojimenez")
+          | Web: 
+          = link_to("http://www.monoentrenado.com", "http://www.monoentrenado.com")
+        .team
+          / = image_tag("nelson.png")
+      .span4.info
+        %h1 Henry López
+        %h4 
+          = link_to("henry@mockingbirdev.com", "mailto:henry@mockingbirdev.com")
+        %hr
+        %p Estudiante de Enseñanza Media en el Instituto Nacional General José Miguel Carrera
+        %p Developer en C, PHP+MySQL
+        %h5 
+          Twitter: 
+          = link_to("@Marcianisto", "https://www.twitter.com/Marcianisto")
+          | Web: 
+          = link_to("http://www.notengopagina.com", :url => "http://marcianisto.mockingbirdev.com")
+        .team
+          / = image_tag("henry.png")
 = render "/layouts/footer"
