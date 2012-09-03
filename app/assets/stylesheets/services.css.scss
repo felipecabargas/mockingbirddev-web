@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url("http://fonts.googleapis.com/css?family=Glegoo");
+
 // .resources{
 //   margin: 0 auto 0 auto;  
 // }
@@ -25,6 +27,8 @@
 
 .info{
   text-align: center;
+  font-size: 15px;
+  font-family: 'Glegoo', serif;
   a, a:hover, a:visited{
     text-decoration: none;
   }

@@ -2,6 +2,11 @@
 //A. Felipe Cabargas Madrid <felipe@cabargas.com>
 //Mockingbird Dev - 2012
 
+
+// Fonts
+
+@import url("http://fonts.googleapis.com/css?family=Handlee");
+
 //Pantone
 $background-general: #f4f4f4;
 $background-div: #0c0c0c;
@@ -15,26 +20,33 @@ $font: #3f3f3f;
 
 body{
   background: $background-general;
+  background-image: url(banner-white.png);
   font-family: sans;
   color: $font;
 }
 
 .header{
   .banner{
-    height: 100px;
+    text-align: center;
+    height: 620px;
     background-image: url("banner.png");
     .title{
       img{
-        height: 40%;
-        margin: 35px 0 0 75px;
-        position: relative;
+        height: 80px;
+        margin-top: 270px;
+        // margin: 35px 0 0 75px;
+        // position: relative;
       }
     }  
     .bird{
+      font-family: 'Handlee', cursive;
+      font-size: 30px;
+      color: white;
+      margin-top: 20px;
       img{
-        height: 100px;
+        height: 150px;
         opacity: 0.7;
-        position: absolute;
+        // position: absolute;
         top: 0;
         left: -20px;
       }
@@ -65,7 +77,7 @@ body{
 .footer{
   background-image: url("banner-black.png");
   padding: 10px 0 10px 0;
-  height: 40px;
+  height: 45px;
   width: 100%;
   position: fixed; 
   bottom: 0; 
@@ -76,7 +88,7 @@ body{
     height: 100%;
   }
   .data{
-    margin: 10px;
+    margin: 12.5px;
     display: inline;
     float: left;
   }

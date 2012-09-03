@@ -3,41 +3,49 @@
   .container-fluid
     .page-header
       %h1 
-        Qué hacemos? 
+        cada día más clientes felices
     .row-fluid
-      .thumbnails
-        .span4.thumbnail
-          .caption
-            %h1.info
-              =image_tag("technologies.png")
-            %hr
-            %p Modernización y mantenimiento de webs, implementación de SAaS en Ruby on Rails y PHP en Symfony.
-        .span4.thumbnail
-          .caption
-            %h1.info
-              =image_tag("platforms.png")
-            %hr
-            %p Desarrollo y publicación de aplicaciones nativas y adaptación de webs para iOS, Android y Windows Phone.
-        .span4.thumbnail
-          .caption
-            %h1.info
-              =image_tag("snetworks.png")
-            %hr
-            %p Porque hoy no sólo basta con una web. Diseño, asesorías y planificación de campañas en redes sociales.
+      .span3.brand
+        %h5
+          = image_tag("colapso.png")
+        %hr
+        %h6 
+          = link_to("radiocolapso.com", "http://www.radiocolapso.com")
+      .span3.brand
+        %h5
+          = image_tag("squape.png")
+        %hr
+        %h6 
+          = link_to("squape.com", "http://www.squape.com")
+      .span3.brand
+        %h5
+          = image_tag("menare.png")
+        %hr
+        %h6 
+          = link_to("menare.cl", "http://www.menare.cl")
+      .span3.brand
+        %h5
+          = image_tag("cabargas.png")
+        %hr
+        %h6 
+          = link_to("cabargas.com", "http://www.cabargas.com")
     .page-header
       %h1 
-        %small showcase
+        vamos al grano
     .row-fluid
-      .span3.brand
-        %h6
-          = image_tag("colapso.png")
-      .span3.brand
-        %h6
-          = image_tag("squape.png")
-      .span3.brand
-        %h6
-          = image_tag("menare.png")
-      .span3.brand
-        %h6
-          = image_tag("cabargas.png")
+      .span4
+        %h1.info
+          =image_tag("technologies.png")
+        %hr
+        %p.info Modernización y mantenimiento de webs, implementación de SAaS en Ruby on Rails y PHP en Symfony.
+      .span4
+        %h1.info
+          =image_tag("platforms.png")
+        %hr
+        %p.info Desarrollo y publicación de aplicaciones nativas y adaptación de webs para iOS, Android y Windows Phone.
+      .span4
+        %h1.info
+          =image_tag("snetworks.png")
+        %hr
+        %p.info Porque hoy no sólo basta con una web. Diseño, asesorías y planificación de campañas en redes sociales.
 = render "/layouts/footer"
